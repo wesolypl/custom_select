@@ -48,11 +48,11 @@ const handle = (newSelect, oldSelect, oldOptions) => {
             option.classList.toggle('customOptionVisible');
             //Add bgc on hover option
             option.addEventListener('mouseover', () => {
-                option.style.backgroundColor = '#0984e3';
+                option.classList.add("customOption--hover");
             })
             //Remove bgc on mouseout
             option.addEventListener('mouseout', () => {
-                option.style.backgroundColor = 'transparent';
+                option.classList.remove("customOption--hover");
             })
             //Change value in newSelect
             option.addEventListener('click', () => {
